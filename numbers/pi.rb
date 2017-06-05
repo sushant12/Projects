@@ -3,9 +3,7 @@ module Project
     PI = Math::PI
     def pi_val
       num = ARGV[0].to_i
-      if num < 1 || num > 13
-      	return "Enter number between 1 - 13"
-      end
+      return "Enter number between 1 - 13" if num < 1 || num > 13
       sprintf("%.#{num}f",PI)
     end
    end
